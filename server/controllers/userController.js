@@ -92,7 +92,7 @@ export const updateUserCourseProgress = async (req, res) => {
             progressData.lectureCompleted.push(lectureId);
             await progressData.save();
         } else {
-            await progressData.create({
+            await CourseProgress.create({
                 userId,
                 courseId,
                 lectureCompleted: [lectureId]
