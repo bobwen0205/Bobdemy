@@ -153,11 +153,13 @@ const AddCourse = () => {
                 accept="image/*"
                 hidden
               />
-              <img
-                className="max-h-10"
-                src={image ? URL.createObjectURL(image) : ""}
-                alt=""
-              />
+              {image && (
+                <img
+                  className="max-h-10"
+                  src={URL.createObjectURL(image)}
+                  alt=""
+                />
+              )}
             </label>
           </div>
         </div>

@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Node.js",
+      "envFile": "${workspaceFolder}/.env",
+      "program": "${workspaceFolder}/server.mjs",
+      "runtimeArgs": ["--experimental-specifier-resolution=node"],
+      "sourceMaps": true
+    }
+  ]
+}

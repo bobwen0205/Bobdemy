@@ -35,7 +35,6 @@ const MyCourses = () => {
             <tbody className="text-sm text-gray-500">
               {courses.map((course) => (
                 <tr key={course._id} className="border-b border-gray-500/20">
-                  {" "}
                   <td
                     className="md:px-4 pl-2 md:p1-4 py-3 flex items-center
 space-x-3 truncate"
@@ -50,7 +49,7 @@ space-x-3 truncate"
                     </span>
                   </td>
                   <td className="px-4 py-3">
-                    {currency}{" "}
+                    {currency}
                     {Math.floor(
                       course.enrolledStudents.length *
                         (course.coursePrice -
